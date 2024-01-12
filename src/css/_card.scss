@@ -1,0 +1,16 @@
+.card {
+    &__group {
+        &-list {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: top;
+            flex-wrap: wrap;
+        }
+        &-item {
+            width: 21%;
+            min-width: 360px;
+            margin-bottom: 40px;
+        }
+    }
+}

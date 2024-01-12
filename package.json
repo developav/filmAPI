@@ -1,0 +1,11 @@
+{
+  "name": "films",
+  "version": "1.0.0",
+  "description": "films list",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pavlov Dmitrii",
+  "license": "ISC"
+}
