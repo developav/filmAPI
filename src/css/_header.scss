@@ -1,0 +1,25 @@
+.header{
+    margin-bottom: 50px;
+    background-color: black;
+    &__group {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+    }
+    &__logo {
+        z-index: 2;
+    }
+    &__list {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 30%;
+    }
+    &__item {
+        &-link {
+            color: #fff;
+        }
+    }
+}

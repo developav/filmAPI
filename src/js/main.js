@@ -15,12 +15,12 @@ for (let i = 0; i < allFilms.length; i++) {
     const genreNames = allFilms[i].genres.map(genre => genre.name).join(', ');
     const filmDetailsHTML = `
         <li class="card__group-item">
-            <h2>${allFilms[i].nameRu}</h2>
-            <p>Original Name: ${allFilms[i].nameOriginal}</p>
-            <p>Year: ${allFilms[i].year}</p>
-            <p>Genres: ${genreNames}</p>
-            <img src="${allFilms[i].posterUrl}" alt="${allFilms[i].nameRu} Poster">
-            <p>Rating: ${allFilms[i].ratingKinopoisk}</p>
+            <h2 class="card__group-item-head">${allFilms[i].nameRu}</h2>
+            <img class="card__group-item-img" src="${allFilms[i].posterUrl}" alt="${allFilms[i].nameRu} Poster">
+            <p class="card__group-item-rating">Rating: ${allFilms[i].ratingKinopoisk}</p>
+            <p class="card__group-item-name">Original Name: ${allFilms[i].nameOriginal}</p>
+            <p class="card__group-item-year">Year: ${allFilms[i].year}</p>
+            <p class="card__group-item-genr">Genres: ${genreNames}</p>
         </li>
     `;
 
