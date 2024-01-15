@@ -1,6 +1,6 @@
 .header {
   margin-bottom: 50px;
-  background-color: black;
+  background-color: #151125;
 }
 .header__group {
   display: flex;
@@ -30,22 +30,43 @@
   flex-wrap: wrap;
 }
 .card__group-item {
+  position: relative;
   display: flex;
   flex-direction: column;
   padding: 10px 10px;
   width: 21%;
   min-width: 360px;
   margin-bottom: 40px;
-  border: 1px solid black;
 }
 .card__group-item-head {
   text-align: center;
   margin-bottom: 20px;
+  color: #fff;
+}
+.card__group-item-genr {
+  color: #21e700;
 }
 .card__group-item-img {
+  vertical-align: top;
   max-height: 430px;
   margin-bottom: 30px;
+  box-shadow: #fff;
 }
+.card__group-item-rating {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 45px;
+  height: 45px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 10px 10px;
+  background-color: rgba(21, 16, 37, 0.5);
+  color: #fff;
+  border: 1px solid #21e700;
+  border-radius: 80%;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -63,7 +84,7 @@ html {
 body {
   margin: 0;
   font-family: "TT Firs Neue", sans-serif;
-  background-color: var(--color-white);
+  background-color: #151125;
 }
 
 body::-webkit-scrollbar {
