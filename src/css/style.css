@@ -19,6 +19,8 @@
   width: 30%;
 }
 .header__item-link {
+  position: relative;
+  z-index: 500;
   color: #fff;
 }
 
@@ -43,12 +45,19 @@
   margin-bottom: 20px;
   color: #fff;
 }
+.card__group-item-name {
+  margin-bottom: 20px;
+  color: #fff;
+}
+.card__group-item-year {
+  margin-bottom: 20px;
+  color: #fff;
+}
 .card__group-item-genr {
   color: #21e700;
 }
 .card__group-item-img {
   vertical-align: top;
-  max-height: 430px;
   margin-bottom: 30px;
   box-shadow: #fff;
 }

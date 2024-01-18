@@ -19,6 +19,8 @@
     }
     &__item {
         &-link {
+            position: relative;
+            z-index: 500;
             color: #fff;
         }
     }
