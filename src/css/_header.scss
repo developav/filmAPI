@@ -10,12 +10,15 @@
     }
     &__logo {
         z-index: 2;
+        &-svg {
+            width: 80px;
+        }
     }
     &__list {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 30%;
+        width: 20%;
     }
     &__item {
         &-link {

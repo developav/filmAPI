@@ -12,11 +12,14 @@
 .header__logo {
   z-index: 2;
 }
+.header__logo-svg {
+  width: 80px;
+}
 .header__list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 30%;
+  width: 20%;
 }
 .header__item-link {
   position: relative;

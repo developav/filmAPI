@@ -28,6 +28,7 @@ for (let i = 0; i < allFilms.length; i++) {
         originalFilm = allFilms[i].nameOriginal,
         yearFilm = allFilms[i].year,
         ratingFilm = allFilms[i].ratingKinopoisk;
+        // This endpoint returns a list of facts and errors in the movie.
     if (url === PREMIER__FILMS) {
         const filmDetailsHTML = `
         <li class="card__group-item">
@@ -37,6 +38,7 @@ for (let i = 0; i < allFilms.length; i++) {
             <p class="card__group-item-name">Оригинальное название: ${originalFilm}</p>
             <p class="card__group-item-year">Дата выхода: ${yearFilm}</p>
             <p class="card__group-item-genr">Жанр: ${genreNames}</p>
+           
         </li>
     `;
     const filmDetailsSection = document.querySelector('.card__group-list');
@@ -57,28 +59,12 @@ for (let i = 0; i < allFilms.length; i++) {
     filmDetailsSection.innerHTML += filmDetailsHTML;
     }  
 }
+
 } catch (error) {
     console.log(`Ошибка при получении данных о клиентах: ${error}`);
 }
 }
 
-// This endpoint returns a list of facts and errors in the movie.
-async function returnFact(id) {
-    try {
-        const response = await fetch(`https://kinopoiskapiunofficial.tech/api/v2.2/films/${id}/facts`,{
-            method: 'GET',
-            headers: {
-                'X-API-KEY': '739ee6ae-b724-4d2d-ac9e-626e5190393f',
-                'Content-Type': 'application/json',
-            }
-        });
-        const result = await response.json();
-        const factArray = result.items;
-        console.log(factArray)
-        } catch (error) {
-            console.log(`Ошибка при получении данных о клиентах: ${error}`);
-        }
-}
 
 
 requestFilm('https://kinopoiskapiunofficial.tech/api/v2.2/films/collections?type=TOP_POPULAR_ALL&page=3')
